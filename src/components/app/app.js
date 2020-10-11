@@ -4,9 +4,12 @@ import { Route, Switch } from 'react-router-dom';
 
 import './app.css';
 
+const name='Alex';
+const sent =`Hello ${name}`;
+
 const App = () => {
   return (
-    <div>Hello World</div>
+    <div>{sent}</div>
     
   );
 };

@@ -3,11 +3,11 @@ let path = require('path');
 let conf = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, './dist/'),
+        path: path.resolve(__dirname, './build/'),
         filename: 'main.js',
-        publicPath: 'dist/'
+        publicPath: 'build/'
     },
-    module: {
+    module: { 
         rules: [
             {
                 test: /\.js$/,
@@ -15,10 +15,12 @@ let conf = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/preset-env'],
+                        presets: [
+                            '@babel/preset-env'
+                        ], 
                         plugins: [
-                            "@babel/plugin-transform-react-jsx",
-                            "@babel/plugin-proposal-class-properties"
+                             "@babel/plugin-transform-react-jsx",
+                             "@babel/plugin-proposal-class-properties"
                         ]
                     }
                 }
