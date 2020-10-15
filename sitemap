@@ -1,0 +1,108 @@
+header
+	logo
+	users office
+	firstName + lastName
+	settings
+	logout button
+	
+login page
+	login
+	password
+	submit
+settings page
+	change password link
+change password page
+	oldPassword
+	newPassword
+	submit button
+	cancel button	
+main page (links)
+	admin page (roles: ADMIN)
+	reports page (roles: ADMIN, MANAGER)
+	create ticket (roles: ADMIN, USER, MANAGER)
+	show all my tickets created (roles: ADMIN, USER, MANAGER)
+	active ticket (roles: SUPPORT)
+	show all my tickets assigned (roles: SUPPORT)
+admin page
+	add user
+	find user
+	get all users
+add user page
+	form:
+	login
+	email
+	first name
+	last name
+	isActiv (true, false)
+	office
+	roles (ADMIN, MANAGER, USER, SUPPORT)
+	submit button
+	cancel button
+find user - return users list
+	form:
+	login (not required)
+	lastName (not required)
+	find button
+	cancel button
+		click on user link to user's page
+get all users
+	users list
+	return page
+		click on user link to user's page
+user's page
+	form:
+	login
+	email
+	first name
+	last name
+	isActiv (true, false)
+	isTempPassword (true, false)
+	office
+	roles (ADMIN, MANAGER, USER, SUPPORT)
+	change button
+	return button
+	change password - submit
+reports page
+	report type (downtime, execution time, wrong tickets)
+	startdate
+	enddate
+	office
+	format
+create ticket page
+	“subject”:“тема”,
+  	“priority”:“URGENT” | “CRITICAL” | ”MEDIUM” | ”LOW”,
+  	“message”:”описание проблемы”
+  	submit button
+  	cancel button
+show all my tickets - return tickets list
+	click on item links to ticket page
+ticket page
+	all ticket data (subjekt, priority, message, etc)
+	change status - only to support ”CREATED” | ”QUEUED” | “IN_WORK” |     
+	                                  “REPORTED_AS_DONE” | “CONFIRMED” | 
+	                                  “REJECTED” |   “SUPPORT_REJECT” | “HOLD”
+	change priority - only to support (IN WORK and HOLD cases)
+	cancel button	
+	
+	in REJECT case - popup window with cause form
+	in HOLD case - “endHoldDateTime”:”YYYY-MM-DD:hh-mm”,
+ 			"holdCause”:”причина постановки на удержание”,
+
+active ticket page - returns ticket page, assigned by this support or "you hav no active ticket" 	
+show all my tickets - return tickets list
+	id subject priority status
+	
+	click on item links to ticket page
+	return page	
+	
+footer	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
