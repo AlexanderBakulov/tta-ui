@@ -1,15 +1,19 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
+import Header from '../header';
+import { MainPage } from '../../pages';
+import Footer from '../footer';
 import './app.css';
 
-const name='Alex';
-const sent =`Hello ${name}`;
 
 const App = () => {
   return (
     <div>
-      <h1>{sent}</h1>
+     <Header />
+     <MainPage />
+     <Footer />
+
     </div>
     
   );
