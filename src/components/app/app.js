@@ -3,7 +3,6 @@ import { Route, Switch } from 'react-router-dom';
 
 import Header from '../header';
 import { MainPage } from '../../pages';
-import Footer from '../footer';
 import './app.css';
 
 
@@ -12,7 +11,6 @@ const App = () => {
     <div>
      <Header />
      <MainPage />
-     <Footer />
 
     </div>
     
