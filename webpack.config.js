@@ -46,11 +46,11 @@ module.exports = (env={}) => {
                                 presets: [
                                     '@babel/preset-env',
                                     '@babel/preset-react'
+                                ],
+                                plugins: [
+                                     "@babel/plugin-transform-react-jsx",
+                                     "@babel/plugin-proposal-class-properties"
                                 ]
-                                // plugins: [
-                                //      "@babel/plugin-transform-react-jsx",
-                                //      "@babel/plugin-proposal-class-properties"
-                                // ]
                             }
                         }
                     ]
