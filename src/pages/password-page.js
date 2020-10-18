@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ChangePasswordPage = () => {
+const PasswordPage = () => {
     return (
         <p>Change Password Page</p>
     );
 }
 
-export default ChangePasswordPage;
+export default PasswordPage ;

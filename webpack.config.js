@@ -30,10 +30,10 @@ module.exports = (env={}) => {
         mode: isProd ? 'production' : isDev && 'development',
         entry: './src/index.js',
         output: {
-            path: path.resolve(__dirname, './build/'),
-            filename: 'main.js'
-            // publicPath: 'build/'
-        },
+            path: path.resolve(__dirname, 'dist'),
+            filename: 'main.js',
+            publicPath: '/'
+          },
         module: { 
             rules: [
                 {
@@ -62,6 +62,9 @@ module.exports = (env={}) => {
                 }
             ]
         },
+        devServer: {
+            historyApiFallback: true,
+          },
         plugins: getPlugins()
         // plugins: [
         //     new HtmlWebpackPlugin({template: 'public/index.html'}),

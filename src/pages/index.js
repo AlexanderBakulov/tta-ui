@@ -1,29 +1,20 @@
-import MainPage from './main-page';
-import ActiveTicketPage from './active-ticket-page';
-import AddUserPage from './add-user.page';
+import UserLinks from './user-links';
 import AdminPage from './admin-page';
-import ChangePasswordPage from './change-password-page';
-import CreateTicketPage from './create-ticket-page';
-import LognPage from './login-page';
+import PasswordPage from './password-page';
+import LoginPage from './login-page';
 import ReportsPage from './reports-page';
-import SettingsPage from './settings-page';
-import TicketPage from './ticket-page';
-import TicketListPage from './ticket-page';
-import UserListPage from './user-list-page';
-import UserPage from './user-page';
+import TicketsCreatedPage from './tickets-created-page';
+import TicketsAssignedPage from './tickets-assigned-page';
+import UsersPage from './users-page';
+
 
 export {
-    MainPage,
-    ActiveTicketPage,
-    AddUserPage,
+    UserLinks,
     AdminPage,
-    ChangePasswordPage,
-    CreateTicketPage,
-    LognPage,
+    PasswordPage,
+    LoginPage,
     ReportsPage,
-    SettingsPage,
-    TicketListPage,
-    TicketPage,
-    UserListPage,
-    UserPage
-}
+    TicketsCreatedPage,
+    TicketsAssignedPage,
+    UsersPage
+};

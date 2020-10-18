@@ -1,9 +1,9 @@
 import React from 'react';
 
-const UsersListPage = () => {
+const UsersPage = () => {
     return (
         <p>Users list Page</p>
     );
 }
 
-export default UsersListPage;
+export default UsersPage;

@@ -1,33 +1,41 @@
 import React from 'react';
-import { Button, Navbar, Nav} from 'react-bootstrap';
+import { Button, Navbar, Nav, NavDropdown} from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
+
 
 import './header.css';
 
-const Header = () => {
-    return(
+const headerView = () => {
+    return (
         <Navbar bg="dark" variant= "dark" expand="lg" >
-            <Navbar.Brand href="#home">TTA</Navbar.Brand>
+            <LinkContainer to="/">
+                <Navbar.Brand>TTA</Navbar.Brand>
+            </LinkContainer>
+            
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-                
                 <Nav>
+                    <NavDropdown title="Alexander Bakulov" id="basic-nav-dropdown">
+                        <LinkContainer to="/password">
+                            <NavDropdown.Item>Change password</NavDropdown.Item>
+                        </LinkContainer>    
+                    </NavDropdown>
                     <Nav.Item>
-                        <Nav.Link href="#">Alexander Bakulov</Nav.Link>
-                    </Nav.Item>
-                    {/* <Nav.Item>
-                        <Form inline>
-                            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                            <Button variant="outline-success">Search</Button>
-                        </Form>                        
-                    </Nav.Item> */}
-                    <Nav.Item>
+                        <Nav.Link>Office: MSK</Nav.Link>
+                    </Nav.Item> 
+                    <LinkContainer to="/login">
                         <Button variant="secondary">Logout</Button>
-                    </Nav.Item>                    
+                    </LinkContainer>                   
                 </Nav> 
-                
             </Navbar.Collapse> 
         </Navbar>
     );
+}
+
+
+const Header = ({isAuthorized}) => {
+    console.log(isAuthorized);
+    return (isAuthorized ? headerView() : null);
 }
 
 export default Header;

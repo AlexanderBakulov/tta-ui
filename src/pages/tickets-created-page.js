@@ -1,9 +1,9 @@
 import React from 'react';
 
-const TicketsListPage = () => {
+const TicketsCreatedPage = () => {
     return (
         <p>Tickets list Page</p>
     );
 }
 
-export default TicketsListPage;
+export default TicketsCreatedPage;

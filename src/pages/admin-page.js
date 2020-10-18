@@ -2,7 +2,7 @@ import React from 'react';
 
 const AdminPage = () => {
     return (
-        <p>Adnin Page</p>
+        <p>ADMIN PAGE</p>
     );
 }
 

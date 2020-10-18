@@ -1,23 +1,20 @@
 header
-	logo
-	users office
-	firstName + lastName
-	settings
-	logout button
+	logo +
+	users office +
+	firstName + lastName + dropdown change password	
+	logout button +
 	
 login page
-	login
-	password
-	submit
-settings page
-	change password link
+	login +
+	password +
+	submit +
 change password page
 	oldPassword
 	newPassword
 	submit button
 	cancel button	
 main page (links)
-	admin page (roles: ADMIN)
+	admin page (roles: ADMIN)+ 
 	reports page (roles: ADMIN, MANAGER)
 	create ticket (roles: ADMIN, USER, MANAGER)
 	show all my tickets created (roles: ADMIN, USER, MANAGER)
