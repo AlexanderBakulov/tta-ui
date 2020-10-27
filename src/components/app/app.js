@@ -15,7 +15,8 @@ import {
   UsersPage,
   PasswordPage,
   ReportsPage,
-  UserLinks
+  UserLinks,
+  AddUserPage
 } from '../../pages';
 import './app.css';
 
@@ -60,6 +61,9 @@ export default class App extends Component {
               </Route>
               <Route exact path="/users/:id?" >
                 <UsersPage />
+              </Route>
+              <Route exact path="/add-user" >
+                <AddUserPage />
               </Route>
               <Route exact path="/reports" >
                 <ReportsPage />

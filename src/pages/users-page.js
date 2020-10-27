@@ -1,8 +1,11 @@
 import React from 'react';
+import { Alert } from 'react-bootstrap';
 
 const UsersPage = () => {
     return (
-        <p>Users list Page</p>
+        <>
+        <Alert variant="secondary"><h2>Users Page</h2></Alert>
+   </>
     );
 }
 

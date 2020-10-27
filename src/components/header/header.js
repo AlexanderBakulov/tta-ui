@@ -9,7 +9,7 @@ const headerView = () => {
     return (
         <Navbar bg="dark" variant= "dark" expand="lg" >
             <LinkContainer to="/">
-                <Navbar.Brand>TTA</Navbar.Brand>
+                <Navbar.Brand><h1>TTA</h1></Navbar.Brand>
             </LinkContainer>
             
             <Navbar.Toggle aria-controls="basic-navbar-nav" />

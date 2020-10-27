@@ -6,6 +6,7 @@ import ReportsPage from './reports-page';
 import TicketsCreatedPage from './tickets-created-page';
 import TicketsAssignedPage from './tickets-assigned-page';
 import UsersPage from './users-page';
+import AddUserPage from './add-user-page';
 
 
 export {
@@ -16,5 +17,6 @@ export {
     ReportsPage,
     TicketsCreatedPage,
     TicketsAssignedPage,
-    UsersPage
+    UsersPage,
+    AddUserPage
 };

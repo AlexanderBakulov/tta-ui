@@ -46,6 +46,17 @@ module.exports = (env={}) => {
                                 presets: [
                                     '@babel/preset-env',
                                     '@babel/preset-react'
+                                    
+                                        // [
+                                        //   "@babel/preset-env",
+                                        //   {
+                                        //     "targets": {
+                                        //       "node": "10"
+                                        //     }
+                                        //   }
+                                        // ],
+                                        // "@babel/preset-react"
+                                      
                                 ],
                                 plugins: [
                                      "@babel/plugin-transform-react-jsx",
@@ -55,6 +66,11 @@ module.exports = (env={}) => {
                         }
                     ]
                 },
+                // {
+                //     test: /\.js$/,
+                //     enforce: 'pre',
+                //     use: ['source-map-loader'],
+                //   },
                 {
                     test: /\.css$/,
                     exclude: /node_modules/,
